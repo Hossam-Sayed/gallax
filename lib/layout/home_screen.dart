@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Container(
         color: GallaxColors.backgroundRed,
-        child: GallaxScroll(
+        child: getGallaxScroll(
           controller: controller,
           physics: const ClampingScrollPhysics(),
           backgroundChildren: _buildGallaxElements(),
