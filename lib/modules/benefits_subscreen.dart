@@ -1,21 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gallax/shared/components.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../shared/constants.dart';
 
-class BenefitsSubscreen extends StatelessWidget {
-  const BenefitsSubscreen({
-    Key? key,
-    this.controller,
-  }) : super(key: key);
-
-  final ScrollController? controller;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
+Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
+    Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         const SizedBox(height: 200.0),
@@ -108,5 +98,3 @@ class BenefitsSubscreen extends StatelessWidget {
         const SizedBox(height: 200),
       ],
     );
-  }
-}

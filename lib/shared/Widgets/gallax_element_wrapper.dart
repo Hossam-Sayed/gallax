@@ -3,33 +3,11 @@ import 'package:gallax/shared/Widgets/gallax_element.dart';
 
 Widget getGallaxElementWrapper({
   required GallaxElement child,
-  required Stream<double>? scrollPositionSteam,
+  required Stream<double>? scrollPositionStream,
 }) => StreamBuilder<double>(
-  stream: scrollPositionSteam,
+  stream: scrollPositionStream,
   builder: (context, snapshot) => Positioned(
     top: -1 * (snapshot.data ?? 0.0),
     child: child,
   ),
 );
-
-// class GallaxElementWrapper extends StatelessWidget {
-//   const GallaxElementWrapper({
-//     Key? key,
-//     required this.child,
-//     required this.scrollPositionSteam,
-//   }) : super(key: key);
-//
-//   final GallaxElement child;
-//   final Stream<double>? scrollPositionSteam;
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return StreamBuilder<double>(
-//       stream: scrollPositionSteam,
-//       builder: (context, snapshot) => Positioned(
-//         top: -1 * (snapshot.data ?? 0.0),
-//         child: child,
-//       ),
-//     );
-//   }
-// }

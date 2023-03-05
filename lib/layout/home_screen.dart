@@ -19,11 +19,17 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _disable3D = false;
 
   @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         color: GallaxColors.backgroundRed,
-        child: getGallaxScroll(
+        child: GallaxScroll(
           controller: controller,
           physics: const ClampingScrollPhysics(),
           backgroundChildren: _buildGallaxElements(),
@@ -33,8 +39,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ],
           children: [
-            ParralaxGalaxySubscreen(controller: controller),
-            BenefitsSubscreen(controller: controller),
+            buildParallaxGalaxySubScreen(controller: controller),
+            buildBenefitsSubScreen(controller: controller),
           ],
         ),
       ),

@@ -1,19 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gallax/shared/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ParralaxGalaxySubscreen extends StatelessWidget {
-  const ParralaxGalaxySubscreen({
-    Key? key,
-    this.controller,
-  }) : super(key: key);
-
-  final ScrollController? controller;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
+Widget buildParallaxGalaxySubScreen({required ScrollController? controller}) =>
+    Column(
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
@@ -108,10 +98,8 @@ class ParralaxGalaxySubscreen extends StatelessWidget {
         const SizedBox(height: 370),
       ],
     );
-  }
 
-  Widget _buildExteriorInfoSection() {
-    return Align(
+Widget _buildExteriorInfoSection() => Align(
       alignment: Alignment.centerLeft,
       child: Padding(
         padding: const EdgeInsets.only(left: 30.0),
@@ -142,5 +130,3 @@ class ParralaxGalaxySubscreen extends StatelessWidget {
         ),
       ),
     );
-  }
-}
