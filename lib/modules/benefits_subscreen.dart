@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gallax/shared/components.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 import '../shared/constants.dart';
 
 Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
@@ -11,16 +9,18 @@ Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
         const SizedBox(height: 200.0),
         Text(
           'All inclusive estate'.toUpperCase(),
-          style: GoogleFonts.nunito(
+          style: TextStyle(
+            fontFamily: "NunitoBold",
             color: GallaxColors.textRed,
             fontSize: 19,
             fontWeight: FontWeight.w900,
-          ),
+          )
         ),
         const SizedBox(height: 22),
         Text(
           'Benefits',
-          style: GoogleFonts.poppins(
+          style: TextStyle(
+            fontFamily: 'Poppins',
             color: GallaxColors.headerText,
             fontSize: 60,
             fontWeight: FontWeight.w800,
@@ -42,7 +42,7 @@ Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
         Text(
           'Get the most out of your buck,\nwe know the best spots.',
           textAlign: TextAlign.center,
-          style: GoogleFonts.nunito(
+          style: TextStyle(
             color: GallaxColors.text,
             fontSize: 25,
             fontWeight: FontWeight.w500,
@@ -53,7 +53,7 @@ Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
         Text(
           'We don\'t just find prime quality \nfor affordable prices, we also find\n the right community for you.',
           textAlign: TextAlign.center,
-          style: GoogleFonts.nunito(
+          style: TextStyle(
             color: GallaxColors.text,
             fontSize: 20,
             fontWeight: FontWeight.w500,

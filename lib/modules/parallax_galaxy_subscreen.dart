@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gallax/shared/constants.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 Widget buildParallaxGalaxySubScreen({required ScrollController? controller}) =>
     Column(
@@ -11,7 +10,8 @@ Widget buildParallaxGalaxySubScreen({required ScrollController? controller}) =>
         Text(
           'Lots. For little'.toUpperCase(),
           textAlign: TextAlign.center,
-          style: GoogleFonts.nunito(
+          style: TextStyle(
+            fontFamily: "NunitoBold",
             color: GallaxColors.textRed,
             fontSize: 19,
             fontWeight: FontWeight.w900,
@@ -45,7 +45,8 @@ Widget buildParallaxGalaxySubScreen({required ScrollController? controller}) =>
         Text(
           'Parallax \nGalaxy',
           textAlign: TextAlign.center,
-          style: GoogleFonts.poppins(
+          style: TextStyle(
+            fontFamily: 'Poppins',
             color: GallaxColors.headerText,
             fontSize: 60,
             fontWeight: FontWeight.w800,
@@ -67,7 +68,7 @@ Widget buildParallaxGalaxySubScreen({required ScrollController? controller}) =>
         Text(
           'Location matters as much as \nyour house, we focus on the \nwhole experience of real estate.',
           textAlign: TextAlign.center,
-          style: GoogleFonts.nunito(
+          style: TextStyle(
             color: GallaxColors.text,
             fontSize: 20,
             fontWeight: FontWeight.w500,
@@ -85,7 +86,7 @@ Widget buildParallaxGalaxySubScreen({required ScrollController? controller}) =>
           },
           child: Text(
             'Show more',
-            style: GoogleFonts.nunito(
+            style: TextStyle(
               color: GallaxColors.red,
               fontSize: 18,
               fontWeight: FontWeight.w600,
@@ -109,7 +110,7 @@ Widget _buildExteriorInfoSection() => Align(
             Text(
               'Get the \nbest view',
               textAlign: TextAlign.left,
-              style: GoogleFonts.poppins(
+              style: TextStyle(
                 color: GallaxColors.headerText,
                 fontSize: 28,
                 fontWeight: FontWeight.w800,
@@ -119,7 +120,7 @@ Widget _buildExteriorInfoSection() => Align(
             const SizedBox(height: 16),
             Text(
               'We know all the \nsweet spots \nin your region.',
-              style: GoogleFonts.nunito(
+              style: TextStyle(
                 color: GallaxColors.text,
                 fontSize: 20,
                 fontWeight: FontWeight.w500,

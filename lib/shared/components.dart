@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'constants.dart';
 
@@ -17,7 +16,7 @@ Widget createSvgLabel({
         Text(
           label.toUpperCase(),
           textAlign: TextAlign.center,
-          style: GoogleFonts.nunito(
+          style: TextStyle(
             color: GallaxColors.textRed,
             fontSize: 17,
             fontWeight: FontWeight.w700,
@@ -51,7 +50,7 @@ Widget drawGallaxButton({
         onPressed: onPressed,
         child: Text(
           text.toUpperCase(),
-          style: GoogleFonts.nunito(
+          style: TextStyle(
             color: Colors.white,
             fontSize: 15,
             fontWeight: FontWeight.w800,
