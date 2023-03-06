@@ -66,25 +66,19 @@ Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
           children: [
             createSvgLabel(
               height: 10.0,
-              width: 50.0,
+              width: 80.0,
               assetName: 'assets/svg/venus.svg',
               label: 'Hot \nVenus',
             ),
             createSvgLabel(
               height: 10.0,
-              width: 50.0,
-              assetName: 'assets/svg/jupiter.svg',
-              label: 'Big \nJupiter',
-            ),
-            createSvgLabel(
-              height: 10.0,
-              width: 50.0,
+              width: 80.0,
               assetName: 'assets/svg/neptune.svg',
               label: 'Cold \nNeptune',
             ),
             createSvgLabel(
               height: 0.0,
-              width: 60.0,
+              width: 100.0,
               assetName: 'assets/svg/planets.svg',
               label: 'Many \nmore',
             ),
