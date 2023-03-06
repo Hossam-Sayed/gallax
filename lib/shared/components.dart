@@ -6,17 +6,21 @@ import 'constants.dart';
 Widget createSvgLabel({
   required assetName,
   required label,
+  required width,
+  required height,
 }) =>
     Column(
       children: [
         SvgPicture.asset(
           assetName,
+          width: width,
         ),
-        const SizedBox(height: 22.0),
+        SizedBox(height: height),
         Text(
           label.toUpperCase(),
           textAlign: TextAlign.center,
           style: TextStyle(
+            fontFamily: 'NunitoBold',
             color: GallaxColors.textRed,
             fontSize: 17,
             fontWeight: FontWeight.w700,

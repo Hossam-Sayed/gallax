@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:gallax/shared/constants.dart';
 
 Widget buildParallaxGalaxySubScreen({required ScrollController? controller}) =>
@@ -21,18 +22,16 @@ Widget buildParallaxGalaxySubScreen({required ScrollController? controller}) =>
         // Container(
         //   height: 100.0,
         //   child: Row(
-        //     crossAxisAlignment: CrossAxisAlignment.start,
+        //     crossAxisAlignment: CrossAxisAlignment.center,
         //     mainAxisAlignment: MainAxisAlignment.center,
         //     children: [
-        //       Container(
-        //         width: 70.0,
-        //         child: SvgPicture.asset('assets/svg/mars.svg'),
-        //       ),
+        //       SvgPicture.asset('assets/svg/meteor.svg',width: 100.0),
         //       const SizedBox(width: 10),
         //       Text(
         //         'Parallax \nGalaxy',
         //         textAlign: TextAlign.center,
-        //         style: GoogleFonts.poppins(
+        //         style: TextStyle(
+        //           fontFamily: 'Poppins',
         //           color: GallaxColors.headerText,
         //           fontSize: 60,
         //           fontWeight: FontWeight.w800,
@@ -108,9 +107,10 @@ Widget _buildExteriorInfoSection() => Align(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Text(
-              'Get the \nbest view',
+              'Earth is\nmoving on',
               textAlign: TextAlign.left,
               style: TextStyle(
+                fontFamily: "Poppins",
                 color: GallaxColors.headerText,
                 fontSize: 28,
                 fontWeight: FontWeight.w800,
@@ -118,15 +118,36 @@ Widget _buildExteriorInfoSection() => Align(
               ),
             ),
             const SizedBox(height: 16),
-            Text(
-              'We know all the \nsweet spots \nin your region.',
-              style: TextStyle(
-                color: GallaxColors.text,
-                fontSize: 20,
-                fontWeight: FontWeight.w500,
-                height: 1.2,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text(
+                  'Hurry up, \nget yourself \nanother home.',
+                  style: TextStyle(
+                    color: GallaxColors.text,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    height: 1.2,
+                  ),
+                ),
+                const SizedBox(
+                  width: 5,
+                ),
+                SvgPicture.asset(
+                  'assets/svg/sick_earth.svg',
+                  width: 80.0,
+                ),
+              ],
             ),
+            // Text(
+            //   'Hurry up, \nget yourself \nanother home.',
+            //   style: TextStyle(
+            //     color: GallaxColors.text,
+            //     fontSize: 20,
+            //     fontWeight: FontWeight.w500,
+            //     height: 1.2,
+            //   ),
+            // ),
           ],
         ),
       ),

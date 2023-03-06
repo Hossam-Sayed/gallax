@@ -61,26 +61,36 @@ Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
           ),
         ),
         const SizedBox(height: 45),
-        // Row(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        //   children: <Widget>[
-        //     createSvgLabel(
-        //       assetName: 'assets/svg/mountains.svg',
-        //       label: 'Prime \nview',
-        //     ),
-        //     const SizedBox(width: 45),
-        //     createSvgLabel(
-        //       assetName: 'assets/svg/stars.svg',
-        //       label: 'Excellent \nquality',
-        //     ),
-        //     const SizedBox(width: 45),
-        //     createSvgLabel(
-        //       assetName: 'assets/svg/money.svg',
-        //       label: 'Good \nprices',
-        //     ),
-        //   ],
-        // ),
-        // const SizedBox(height: 90),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            createSvgLabel(
+              height: 10.0,
+              width: 50.0,
+              assetName: 'assets/svg/venus.svg',
+              label: 'Hot \nVenus',
+            ),
+            createSvgLabel(
+              height: 10.0,
+              width: 50.0,
+              assetName: 'assets/svg/jupiter.svg',
+              label: 'Big \nJupiter',
+            ),
+            createSvgLabel(
+              height: 10.0,
+              width: 50.0,
+              assetName: 'assets/svg/neptune.svg',
+              label: 'Cold \nNeptune',
+            ),
+            createSvgLabel(
+              height: 0.0,
+              width: 60.0,
+              assetName: 'assets/svg/planets.svg',
+              label: 'Many \nmore',
+            ),
+          ],
+        ),
+        const SizedBox(height: 90),
         Align(
           alignment: const Alignment(.8, 0.0),
           child: drawGallaxButton(
