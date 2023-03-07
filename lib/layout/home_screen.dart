@@ -16,7 +16,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final ScrollController controller = ScrollController();
-  bool _disable3D = false;
+  bool _disable3D = true;
 
   @override
   void dispose() {
@@ -79,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildEffectToggle() => IconButton(
         icon: Icon(
-          _disable3D ? Icons.blur_off : Icons.blur_on,
+          !_disable3D ? Icons.blur_off : Icons.blur_on,
           color: GallaxColors.red3,
           size: 30,
         ),

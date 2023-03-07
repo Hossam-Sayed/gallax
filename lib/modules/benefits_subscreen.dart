@@ -7,15 +7,13 @@ Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         const SizedBox(height: 200.0),
-        Text(
-          'All inclusive estate'.toUpperCase(),
-          style: TextStyle(
-            fontFamily: "NunitoBold",
-            color: GallaxColors.textRed,
-            fontSize: 19,
-            fontWeight: FontWeight.w900,
-          )
-        ),
+        Text('All inclusive estate'.toUpperCase(),
+            style: TextStyle(
+              fontFamily: "NunitoBold",
+              color: GallaxColors.textRed,
+              fontSize: 19,
+              fontWeight: FontWeight.w900,
+            )),
         const SizedBox(height: 22),
         Text(
           'Benefits',
@@ -45,7 +43,7 @@ Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
           style: TextStyle(
             color: GallaxColors.text,
             fontSize: 25,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.w600,
             height: 1.2,
           ),
         ),
@@ -56,7 +54,7 @@ Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
           style: TextStyle(
             color: GallaxColors.text,
             fontSize: 20,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.w600,
             height: 1.2,
           ),
         ),
@@ -66,19 +64,19 @@ Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
           children: [
             createSvgLabel(
               height: 10.0,
-              width: 80.0,
+              width: 90.0,
               assetName: 'assets/svg/venus.svg',
               label: 'Hot \nVenus',
             ),
             createSvgLabel(
               height: 10.0,
-              width: 80.0,
+              width: 90.0,
               assetName: 'assets/svg/neptune.svg',
               label: 'Cold \nNeptune',
             ),
             createSvgLabel(
-              height: 0.0,
-              width: 100.0,
+              height: 10.0,
+              width: 90.0,
               assetName: 'assets/svg/planets.svg',
               label: 'Many \nmore',
             ),
@@ -93,7 +91,7 @@ Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
             onPressed: () {
               controller!.animateTo(
                 0,
-                duration: const Duration(milliseconds: 2300),
+                duration: const Duration(milliseconds: 1000),
                 curve: Curves.ease,
               );
             },
