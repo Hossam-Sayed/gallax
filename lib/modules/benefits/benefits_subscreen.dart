@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gallax/shared/components.dart';
-import '../shared/constants.dart';
+import '../../shared/constants.dart';
 
 Widget buildBenefitsSubScreen({required ScrollController? controller}) =>
     Column(

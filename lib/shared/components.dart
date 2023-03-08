@@ -62,3 +62,75 @@ Widget drawGallaxButton({
         ),
       ),
     );
+
+Widget buildTaskItem(context, width, index) => Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Stack(
+        alignment: AlignmentDirectional.center,
+        children: [
+          Container(
+            alignment: AlignmentDirectional.center,
+            decoration: const BoxDecoration(
+              color: Colors.transparent,
+              borderRadius: BorderRadius.all(Radius.circular(25.0)),
+            ),
+            width: 1 * width / 2,
+            // padding: const EdgeInsets.all(20.0),
+            // child: Text(
+            //   (index + 1).toString(),
+            //   textAlign: TextAlign.center,
+            //   style: TextStyle(
+            //     fontFamily: 'Poppins',
+            //     fontSize: 200.0,
+            //     fontWeight: FontWeight.bold,
+            //     color: Colors.grey[200],
+            //   ),
+            // ),
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.all(Radius.circular(40.0)),
+            ),
+            width: 1 * width / 2,
+            height: 2 * width / 3,
+            padding: const EdgeInsets.all(20.0),
+            child: Align(
+              alignment: AlignmentDirectional.bottomEnd,
+              child: Text(
+                (index + 1).toString(),
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 150.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey[200],
+                ),
+              ),
+            ),
+          ),
+          Text(
+            '${planetsList[index]['name']}',
+            style: const TextStyle(
+              fontFamily: 'NunitoBold',
+              fontWeight: FontWeight.bold,
+              fontSize: 40.0,
+              color: Color(0xFF2D1C6A),
+            ),
+          ),
+          Align(
+            alignment: AlignmentDirectional.topCenter,
+            child: SvgPicture.asset(
+              planetsList[index]['img']!,
+              width: 150.0,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(25.0),
+            child: Align(
+              alignment: AlignmentDirectional.bottomCenter,
+              child: drawGallaxButton(text: 'View', onPressed: () {}),
+            ),
+          ),
+        ],
+      ),
+    );

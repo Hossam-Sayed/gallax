@@ -3,8 +3,8 @@ import 'package:gallax/shared/Widgets/gallax_scroll.dart';
 import 'package:gallax/shared/Widgets/gallax_svg_background.dart';
 import 'package:gallax/shared/constants.dart';
 
-import '../modules/benefits_subscreen.dart';
-import '../modules/parallax_galaxy_subscreen.dart';
+import '../modules/benefits/benefits_subscreen.dart';
+import '../modules/parallax_gallaxy/parallax_galaxy_subscreen.dart';
 import '../shared/Widgets/gallax_element.dart';
 
 class HomeScreen extends StatefulWidget {
