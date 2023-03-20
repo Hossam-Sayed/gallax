@@ -1,6 +1,6 @@
-# gallax
+# Gallax
 
-A new Flutter project.
+Gallax is a design challenge app made with Flutter.
 
 ## Getting Started
 
