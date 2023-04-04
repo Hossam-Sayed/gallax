@@ -1,8 +1,8 @@
-# Gallax
+# Gallax 🌌
 
 Gallax is a design challenge app made with Flutter.
 
-## Versions
+## Versions ⚙
 
 The app is still under development.
 
