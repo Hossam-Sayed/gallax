@@ -7,7 +7,6 @@ Gallax is a design challenge app made with Flutter. It demonestrates some design
 
 The app is still under development.
 
-
 <div align=right>
 
 **[`↑ To Top`](#top)**
