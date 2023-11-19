@@ -10,6 +10,7 @@ The app is still under development :construction:
 
 ❗ Note that the above GIF is a bit glitchy due to recording issues.
 
+
 <div align=right>
 
 **[`↑ To Top`](#top)**
