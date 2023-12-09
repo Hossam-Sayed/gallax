@@ -8,10 +8,11 @@ The app is still under development <img src="https://github.com/Hossam-Sayed/tod
 ## App in Action <img src="https://github.com/Hossam-Sayed/gallax/assets/83096913/196e2315-2a9d-4e4c-950f-9ce0114755a1" width=35>
 <img src="https://github.com/Hossam-Sayed/gallax/assets/83096913/c82d149e-0a21-4a27-8043-860ecb49809d" width="200"/>
 
-❗ Note that the above GIF is a bit glitchy due to recording issues. You can test the app performance by clonning this repo and runnng the app in release mode.
-
+❗ Note that the above GIF is a bit glitchy due to recording issues. You can test the app's performance by cloning this repo and running the app in release mode.
 
 <div align=right>
 
-**[`↑ To Top`](#top)**
+[<img src="https://github.com/Hossam-Sayed/android-tips/assets/83096913/a772ce20-8886-4aec-bb9a-7dd97746a9fb" width="50">](#top)
+
+**[`To Top`](#top)**
 </div>
