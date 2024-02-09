@@ -11,8 +11,6 @@ The app is still under development <img src="https://github.com/Hossam-Sayed/tod
 ❗ Note that the above GIF is a bit glitchy due to recording issues. You can test the app's performance by cloning this repo and running the app in release mode.
 
 <div align=right>
-
-[<img src="https://github.com/Hossam-Sayed/android-tips/assets/83096913/a772ce20-8886-4aec-bb9a-7dd97746a9fb" width="50">](#top)
-
+  
 **[`To Top`](#top)**
 </div>
