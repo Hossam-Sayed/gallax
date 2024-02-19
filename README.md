@@ -9,7 +9,6 @@ The app is still under development <img src="https://github.com/Hossam-Sayed/tod
 <img src="https://github.com/Hossam-Sayed/gallax/assets/83096913/c82d149e-0a21-4a27-8043-860ecb49809d" width="200"/>
 
 ❗ Note that the above GIF is a bit glitchy due to recording issues. You can test the app's actual performance by cloning this repo and running the app in release mode.
-
 <div align=right>
   
 **[`To Top`](#top)**
